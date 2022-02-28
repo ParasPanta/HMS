@@ -1,3 +1,3 @@
 # HMS
 
-A simple Hotel Management system with CRUD functionality.
+A simple Hotel Management System with CRUD functionality.
