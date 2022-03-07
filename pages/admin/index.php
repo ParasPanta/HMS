@@ -1,6 +1,7 @@
 <?php
   require_once('../../php/config.php'); 
   require_once('../../php/session.php'); 
+  require('../../php/adminChecker.php');
 
   $sessionEmail = $_SESSION['email'];
   $sql = "Select * from users where email='$sessionEmail'"; //Selecting row from same 

@@ -1,6 +1,8 @@
 <?php
   require_once('../../php/config.php'); 
-  require_once('../../php/session.php'); 
+  require_once('../../php/session.php');
+  require('../../php/adminChecker.php');
+ 
 
   try{
 
