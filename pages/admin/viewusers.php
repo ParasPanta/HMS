@@ -145,7 +145,7 @@
         <nav class="sidebar">
           <header>
             <div class="text logo-text" style="margin-top: 20px">
-              <span class="name">Staff Panel</span>
+              <span class="name">Admin Panel</span>
             </div>
 
             <!-- <i class="bx bx-chevron-right toggle"></i> -->
@@ -379,8 +379,9 @@
                         <td><?php echo $row['Email'] ?></td>
                         <td><?php echo $row['Job'] ?></td>
                         <td>
-                         <div class='table-link viewonly'>
+                         <div class='table-link'>
                            <a class='buttonLink view' href='viewuserdetails.php?id=<?php echo $row_out['id'] ?>'>View</a>
+                           <a class='buttonLink update' href='updateusers.php?id=<?php echo $row_out['id'] ?>'>Update</a>
                          </div>
                         </td>
                         </tr>
