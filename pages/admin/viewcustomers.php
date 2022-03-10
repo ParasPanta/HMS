@@ -320,9 +320,9 @@
                         <td><?php echo $row['Contact'] ?></td>
                         <td><?php echo $row['Address'] ?></td>
                         <td>
-                         <div class='table-link viewonly'>
+                         <div class='table-link'>
                            <a class='buttonLink view' href='viewcustomerdetails.php?SN=<?php echo $row['SN'] ?>'>View</a>
-                           <!-- <a class='buttonLink delete' href='viewscustomers.php?del=<?php echo $row['SN'] ?>'>Delete</a> -->
+                           <a class='buttonLink delete' href='viewcustomers.php?del=<?php echo $row['SN'] ?>'>Delete</a>
                          </div>
                         </td>
                         </tr>
