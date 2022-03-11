@@ -207,6 +207,7 @@ body.dark .sidebar header .toggle {
 .sidebar li a:hover {
   background-color: var(--primary-color);
 }
+
 .sidebar li a:hover .icon,
 .sidebar li a:hover .text {
   color: var(--sidebar-color);
@@ -214,6 +215,18 @@ body.dark .sidebar header .toggle {
 body.dark .sidebar li a:hover .icon,
 body.dark .sidebar li a:hover .text {
   color: var(--text-color);
+}
+
+.active {
+  border-radius: 8px;
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+  border-color: yellowgreen;
+}
+
+.active:hover {
+  transition: 1s;
+  border-color: red;
 }
 
 .sidebar .menu-bar {
@@ -500,7 +513,7 @@ td {
   background-color: chartreuse;
 }
 
-.reset{
+.reset {
   background-color: red;
   border-color: red;
 }
@@ -509,7 +522,6 @@ td {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-
 
 .forminput {
   display: flex;
@@ -521,13 +533,13 @@ td {
   margin-top: 10px;
 }
 
-.createuser-create{
+.createuser-create {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
 }
 
-.createuser-button{
+.createuser-button {
   grid-column-start: 2;
   grid-column-end: 2;
 }

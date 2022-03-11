@@ -51,7 +51,7 @@
 
     <link rel="stylesheet" href="../../css/boxicons.min.css" />
 
-    <!--<title>Dashboard Sidebar Menu</title>-->
+    <title>Hotel Management System</title>
   </head>
   <body class="dark">
     <div class="grid-section">
@@ -75,7 +75,7 @@
               </li> -->
 
               <ul class="menu-links">
-                <li class="nav-link">
+                <li class="nav-link active">
                   <a href="./index.php">
                     <i class="bx bx-home-alt icon"></i>
                     <span class="text nav-text">Dashboard</span>

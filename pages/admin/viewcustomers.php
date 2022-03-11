@@ -104,7 +104,7 @@
 
     <link rel="stylesheet" href="../../css/boxicons.min.css" />
 
-    <!--<title>Dashboard Sidebar Menu</title>-->
+    <title>Hotel Management System</title>
   </head>
   <body class="dark">
     <div class="grid-section">
@@ -147,7 +147,7 @@
                   </a>
                 </li>
 
-                <li class="nav-link">
+                <li class="nav-link active">
                   <a href="./viewcustomers.php">
                     <i class="bx bx-time icon"></i>
                     <span class="text nav-text">View Customers</span>

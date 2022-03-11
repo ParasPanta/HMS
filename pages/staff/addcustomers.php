@@ -1,6 +1,7 @@
 <?php
   require_once('../../php/config.php'); 
-  require_once('../../php/session.php'); 
+  require_once('../../php/session.php');
+  require('../../php/staffChecker.php');
 
   try{
     if(isset($_POST['Submit'])) {
@@ -76,7 +77,7 @@
 
     <link rel="stylesheet" href="../../css/boxicons.min.css" />
 
-    <!--<title>Dashboard Sidebar Menu</title>-->
+    <title>Hotel Management System</title>
   </head>
   <body class="dark">
     <div class="grid-section">
@@ -113,7 +114,7 @@
                   </a>
                 </li>
 
-                <li class="nav-link">
+                <li class="nav-link active">
                   <a href="./addcustomers.php">
                     <i class="bx bx-plus icon"></i>
                     <span class="text nav-text">Add Customers</span>

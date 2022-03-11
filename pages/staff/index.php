@@ -1,6 +1,7 @@
 <?php
-require_once('../../php/config.php'); 
+  require_once('../../php/config.php'); 
   require_once('../../php/session.php'); 
+  require('../../php/staffChecker.php'); 
 
     $sessionEmail = $_SESSION['email'];
     $sql = "Select * from users where email='$sessionEmail'"; //Selecting row from same 
@@ -40,7 +41,7 @@ require_once('../../php/config.php');
 
     <link rel="stylesheet" href="../../css/boxicons.min.css" />
 
-    <!--<title>Dashboard Sidebar Menu</title>-->
+    <title>Hotel Management System</title>
   </head>
   <body class="dark">
     <div class="grid-section">
@@ -64,7 +65,7 @@ require_once('../../php/config.php');
               </li> -->
 
               <ul class="menu-links">
-                <li class="nav-link">
+                <li class="nav-link active">
                   <a href="./index.php">
                     <i class="bx bx-home-alt icon"></i>
                     <span class="text nav-text">Dashboard</span>

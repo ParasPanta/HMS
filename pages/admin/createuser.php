@@ -104,7 +104,7 @@
 
     <link rel="stylesheet" href="../../css/boxicons.min.css" />
 
-    <!--<title>Dashboard Sidebar Menu</title>-->
+    <title>Hotel Management System</title>
   </head>
   <body class="dark">
     <div class="grid-section">
@@ -169,7 +169,7 @@
                 </li>
                 </li>
 
-                <li class="nav-link">
+                <li class="nav-link active">
                   <a href="./createuser.php">
                     <i class="bx bx-plus icon"></i>
                     <span class="text nav-text">Create User</span>
