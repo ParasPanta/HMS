@@ -36,7 +36,7 @@
           $sql_try = "SELECT * from customers";
           $result_try = mysqli_query($db, $sql_try);
           while($row_try = mysqli_fetch_array($result_try)) {           
-            if($Email == $row_try['Email'] && $Contact == $row_try['Contact']  && $Address == $row_try['Address'] && $sn != $row['SN']) {
+            if($Email == $row_try['Email'] && $Contact == $row_try['Contact'] && $sn != $row_try['SN']) {
               throw new Error('Customers Details Already Exist!!!');
             }
             else if($RoomNum == $row_try['RoomNumber']) throw new Error('Room Already taken');
@@ -259,9 +259,14 @@
                     while ($row_rooms = mysqli_fetch_array($result_rooms)) { ?>
 
                     <?php $room_number =  $row_rooms['RoomNumber']; ?>
+                    <?php $room_number_customer =  $getDataRow['RoomNumber']; ?>
 
-                    <option value="$room_number" <?php echo $room_number == '$room_number' ? 'selected' : '' ?>>
-                      <?php echo $getDataRow['RoomNumber'] ?></option>
+                    <!-- <option value="$room_number" <?php echo $room_number == '$room_number' ? 'selected' : '' ?>>
+                      <?php echo $getDataRow['RoomNumber'] ?></option> -->
+
+                    <option value="$room_number"
+                      <?php echo $room_number == "$room_number_customer" ? 'selected' : '' ?>>
+                      <?php echo  $room_number ?></option>
 
                     <!-- <option value="<?php echo $row_rooms['RoomNumber'] ?>" ><?php echo $row_rooms['RoomNumber'] ?></option> -->
 
