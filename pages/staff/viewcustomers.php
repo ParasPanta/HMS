@@ -263,7 +263,7 @@
         </div>
       </div>
       <div class="content">
-        <h2 class="heading_title">Staffs List</h2>
+        <h2 class="heading_title">Customers List</h2>
         <div class="content-section">
           <div class="content-table">
             <table>

@@ -28,19 +28,19 @@
          else if(empty($Email)) throw new Error('Email should not be empty');
          else if(empty($Address)) throw new Error('Address should not be empty');
          else if(empty($RoomNum)) throw new Error('Room Number should not be empty');
-         else if($RoomNum == $row_try['RoomNumber']) throw new Error('Room Already taken');
-         else{
+        //  else if($RoomNum == $row_try['RoomNumber']) throw new Error('Room Already taken');
+        //  else{
            
-         }
-        // else {
-        //   $sql_try = "SELECT * from customers";
-        //   $result_try = mysqli_query($db, $sql_try);
-        //   while($row_try = mysqli_fetch_array($result_try)) {           
-        //     if($Email == $row_try['Email'] && $Contact == $row_try['Contact']  && $Address == $row_try['Address']) {
-        //       throw new Error('Customers Details Already Exist!!!');
-        //     }
-        //     else if($RoomNum == $row_try['RoomNumber']) throw new Error('Room Already taken');
-        //   }
+        //  }
+        else {
+          $sql_try = "SELECT * from customers";
+          $result_try = mysqli_query($db, $sql_try);
+          while($row_try = mysqli_fetch_array($result_try)) {           
+            if($Email == $row_try['Email'] && $Contact == $row_try['Contact']  && $Address == $row_try['Address'] && $sn != $row['SN']) {
+              throw new Error('Customers Details Already Exist!!!');
+            }
+            else if($RoomNum == $row_try['RoomNumber']) throw new Error('Room Already taken');
+          }
           $updateSQL = "UPDATE customers SET 
               FirstName = '$FirstName',
               LastName = '$LastName', 
