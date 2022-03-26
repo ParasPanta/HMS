@@ -287,7 +287,7 @@
 
 
       <div class="content">
-        <h2 class="heading_title">Recently Added Staffs List</h2>
+        <h2 class="heading_title">Recently Added Customers List</h2>
         <div class="content-section">
           <div class="content-table">
             <table>

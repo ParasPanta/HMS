@@ -149,7 +149,7 @@
     </div>
     <div class="right-section">
       <section class="home">
-        <div class="text">View Customers</div>
+        <div class="text">View Rooms</div>
       </section>
       <div class="content">
         <h2 class="heading_title">Search</h2>
@@ -207,7 +207,7 @@
         </div>
       </div>
       <div class="content">
-        <h2 class="heading_title">Staffs List</h2>
+        <h2 class="heading_title">Rooms List</h2>
         <div class="content-section">
           <div class="content-table">
             <table>
